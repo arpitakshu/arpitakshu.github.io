@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Anika Upadhyay 🎂</title>
+<meta name="description" content="A little birthday surprise, just for Anika.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400;1,9..144,600&family=Nunito:wght@400;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+<button id="themeBtn" aria-label="Toggle light and dark theme" title="Toggle theme">🌙</button>
+
+<!-- Password page -->
+<main id="gate">
+  <div>
+    <h1>Hey, Anika! 💌</h1>
+    <p>A little birthday surprise is waiting just for you! 🥹🎁</p>
+    <div class="env" id="env" aria-hidden="true">
+      <div class="back"></div>
+      <div class="paper">for Anika ♡</div>
+      <div class="front"></div>
+      <div class="flap"></div>
+      <div class="seal">💖</div>
+    </div>
+    <form class="pw" id="pwForm" autocomplete="off">
+      <label for="pw" class="sr" style="position:absolute;left:-9999px">Password</label>
+      <input id="pw" type="password" placeholder="Enter the secret word" autocomplete="off" required>
+      <button class="btn" type="submit">Open</button>
+    </form>
+    <div id="msg" role="status" aria-live="polite"></div>
+    <button id="hintBtn" type="button" hidden>Need a hint?</button>
+  </div>
+</main>
+
+<!-- Birthday page -->
+<div id="site" hidden>
+  <header class="hero">
+    <div>
+      <h1 id="title" aria-label="Happy Birthday!">Happy Birthday!</h1>
+      <h2>Dear Anika Upadhyay 💖</h2>
+      <button class="cake" id="cake" aria-label="Blow out the candles">
+        <svg viewBox="0 0 240 200" role="img" aria-hidden="true">
+          <ellipse cx="120" cy="186" rx="104" ry="9" fill="rgba(0,0,0,.18)"/>
+          <rect x="22" y="112" width="196" height="72" rx="14" fill="#ff9bbd"/>
+          <path d="M22 130q16 18 33 0t33 0 33 0 33 0 33 0 33 0v-6q0-12-12-12H34q-12 0-12 12z" fill="#fff6f9"/>
+          <rect x="44" y="64" width="152" height="52" rx="12" fill="#ffc9a0"/>
+          <path d="M44 82q19 18 38 0t38 0 38 0 38 0v-6q0-12-12-12H56q-12 0-12 12z" fill="#fff6f9"/>
+          <g fill="#7ad7e8"><rect x="86" y="38" width="8" height="28" rx="3"/><rect x="116" y="34" width="8" height="32" rx="3" fill="#c9a6ff"/><rect x="146" y="38" width="8" height="28" rx="3"/></g>
+          <path class="flame" d="M90 18c7 8 8 14 0 18-8-4-7-10 0-18z" fill="#ffd24a"/>
+          <path class="flame" d="M120 14c7 8 8 14 0 18-8-4-7-10 0-18z" fill="#ff9b3d"/>
+          <path class="flame" d="M150 18c7 8 8 14 0 18-8-4-7-10 0-18z" fill="#ffd24a"/>
+          <circle cx="62" cy="150" r="5" fill="#fff"/><circle cx="104" cy="158" r="5" fill="#fff"/><circle cx="148" cy="150" r="5" fill="#fff"/><circle cx="190" cy="158" r="5" fill="#fff"/>
+        </svg>
+      </button>
+      <p class="cakehint" id="cakeHint">Tap the cake, make a wish, blow out the candles 🕯️</p>
+      <p class="scroll" id="scroll">Scroll down, there's a letter for you ↓</p>
+    </div>
+  </header>
+
+  <section class="pad">
+    <article class="letter">
+      <p class="to rv">Dear Anika Upadhyay, 🌸❤️</p>
+      <p class="rv">Happy Birthday to a truly wonderful friend! 🥳 May your special day be filled with endless happiness, beautiful smiles, sweet surprises, and lots of love. 🎂💝</p>
+      <p class="rv">May all your dreams come true, may you achieve everything your heart desires, and may your life always be full of laughter, success, and unforgettable memories. ✨</p>
+      <p class="rv">Keep smiling, keep shining, and always be the amazing person you are. The world is brighter with you in it! 🦋</p>
+      <p class="rv sign">Wishing you the happiest birthday ever, Anika! 🫶🎉</p>
+    </article>
+  </section>
+
+  <section class="pad surprise">
+    <button class="btn" id="surpriseBtn" aria-expanded="false" aria-controls="surpriseMessage">One more surprise 🎁</button>
+    <div id="surpriseMessage" class="hidden" role="region" aria-label="A special message for Anika">
+      <h2>A Special Message for Anika 💌</h2>
+      <p>Dear Anika Upadhyay, ❤️</p>
+      <p>You deserve all the happiness this world has to offer. May every new day bring you closer to your dreams, and may your smile never fade. 🌷✨</p>
+      <p>Keep being wonderful, keep spreading happiness, and never forget how special you are! 🥹💖</p>
+      <p style="font-style:italic">Happy Birthday, Anika! 🎂🎉</p>
+    </div>
+  </section>
+  <footer>made with love, just for you 💖</footer>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
